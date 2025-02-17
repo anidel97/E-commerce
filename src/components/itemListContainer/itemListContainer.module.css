@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.itemListContainer {
+    height: 680px;
+    background-image: url(../../assets/hero-asesoramiento.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.itemListContainer h1 {
+    width: 40%;
+    height: 150px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #656d4a;
+    border-radius: 0px 30px 0px 30px;
+}
+
+div p {
+    width: 30%;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: #60687a;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+div p span{
+    font-weight:800;
+    font-size: 40px;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+/*
+.itemListContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+.itemListContainer h1 {
+    font-family: 'Futura Bk Bt', sans-serif;
+    color: #656d4a;
+
+}
+
+.itemListContainer p {
+    font-family: 'Futura Bk Bt', sans-serif;
+    color: #656d4a;
+}*/
