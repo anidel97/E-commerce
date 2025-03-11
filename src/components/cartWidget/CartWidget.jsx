@@ -1,14 +1,16 @@
-import styles from './CartWidget.module.css';
+import style from './CartWidget.module.css';
 import Badge from '@mui/material/Badge';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 
-
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
     return (
-        <Badge className={styles.cartWidget} badgeContent={4} color="success">
-            <LocalMallOutlinedIcon color="action" />
-        </Badge>
+        <Link to="/cart">
+            <Badge className={style["cartWidget"]} badgeContent={4} color="success">
+                <LocalMallOutlinedIcon color="action" />
+            </Badge>
+        </Link>
     )
 }
 

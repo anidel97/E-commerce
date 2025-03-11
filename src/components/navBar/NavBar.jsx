@@ -10,11 +10,9 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-
 import CartWidget from '../cartWidget/CartWidget';
-import styles from './navBar.module.css';
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+import { NavLink, Link } from 'react-router-dom';
+import styles from './NavBar.module.css';
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -48,10 +46,9 @@ function ResponsiveAppBar() {
                     <Typography
                         variant="h4"
                         noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
+                        component={NavLink}
+                        to="/"
                         sx={{
-
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'Futura Bk Bt',
                             fontWeight: 700,
@@ -62,7 +59,6 @@ function ResponsiveAppBar() {
                     >
                         AnDeStudio.
                     </Typography>
-
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -78,8 +74,8 @@ function ResponsiveAppBar() {
                     <Typography
                         variant="h5"
                         noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
+                        component={NavLink}
+                        to="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -122,31 +118,45 @@ function ResponsiveAppBar() {
                             transformOrigin={{
                                 vertical: 'top',
                                 horizontal: 'left',
-                            }}
-                        >
-                            <MenuItem  onClick={handleCloseDropdownMenu}sx={{
-                                margin: 1,
-                                display:'flex',
-                                justifyContent: 'left',
-                                alignItems: 'center',
-                                flexGrow: 1,
-                                fontFamily: 'Mulish',
-                                fontWeight: 300,
-                                color: '#656d4a',
-                                textDecoration: 'none',color: '#656d4a',
-                                borderColor: 'none'
-                            }}>Decoración</MenuItem>
-                            <MenuItem  onClick={handleCloseDropdownMenu} sx={{
-                                margin: 1,
-                                display:'flex',
-                                justifyContent: 'left',
-                                alignItems: 'center',
-                                flexGrow: 1,
-                                fontFamily: 'Mulish',
-                                fontWeight: 300,
-                                color: '#656d4a',
-                                textDecoration: 'none',color: '#656d4a' 
-                            }}>Muebles</MenuItem>
+                            }}>
+                            <MenuItem 
+                                component={Link} 
+                                to='/category/electronics' 
+                                onClick={handleCloseDropdownMenu}
+                                sx={{
+                                    margin: 1,
+                                    display:'flex',
+                                    justifyContent: 'left',
+                                    alignItems: 'center',
+                                    flexGrow: 1,
+                                    fontFamily: 'Mulish',
+                                    fontWeight: 300,
+                                    color: '#656d4a',
+                                    textDecoration: 'none', color: '#656d4a',
+                                    borderColor: 'none'
+                                }}
+                            >
+                                electronics - Decoración
+                            </MenuItem>
+                            <MenuItem 
+                                component={Link} 
+                                to='/category/jewelery' 
+                                onClick={handleCloseDropdownMenu}
+                                sx={{
+                                    margin: 1,
+                                    display:'flex',
+                                    justifyContent: 'left',
+                                    alignItems: 'center',
+                                    flexGrow: 1,
+                                    fontFamily: 'Mulish',
+                                    fontWeight: 300,
+                                    color: '#656d4a',
+                                    textDecoration: 'none' , color: '#656d4a',
+                                    borderColor: 'none'
+                                }}
+                            >
+                                Joyas - Muebles
+                            </MenuItem>
                         </Menu>
                     </Box>
                     <Box sx={{ flexGrow: 0 }}>
@@ -165,28 +175,6 @@ function ResponsiveAppBar() {
                             <CartWidget/>
                             </Button>
                         </Tooltip>
-                        <Menu
-                            sx={{ mt: '48px' }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
-                        >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
                     </Box>
                 </Toolbar>
             </Container>
