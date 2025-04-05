@@ -1,34 +1,35 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-
 .ItemDetail{
     font-family: 'Montserrat', sans-serif;
     display: grid;
     justify-content: left;
     align-items: center;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 20px 40px 20px 250px 10px;
+    grid-template-rows: 20px 40px 50px 140px 50px 10px 50px 10px;
     gap: 30px;
     grid-template-areas:
     "img categoria"
     "img titulo"
     "img precio"
     "img descripcion"
-    "img boton";
-    margin: 30px;
+    "img contador"
+    "img boton"
+    "img seguir"
+    "img finalizar";
+    margin: 50px 30px 30px 30px;
     padding: 10px;
+    height: calc(100vh - 76.45px);
+    flex-wrap: wrap;
 }
 
 .imgItemDetail{
     grid-area: img;
-    height: 500px;
+    height: 650px;
 }
 
 .categoriaItemDetail{
     grid-area: categoria;
-    font-size: 10px;
+    font-family: inherit ,sans-serif, ;
+    font-size: 15px;
     font-weight: 200;
     text-transform: uppercase;
 }
@@ -36,7 +37,7 @@
 .tituloItemDetail{
     grid-area: titulo;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .precioItemDetail{
@@ -48,13 +49,37 @@
 .descripcionItemDetail{
     grid-area: descripcion;
     font-weight: 200;
-    font-size: 12px;
+    font-size: 15px;
     text-align: justify;
 }
 
 .botonItemDetail{
     grid-area: boton;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     background-color: rgba(233, 233, 233, 0.509);
+    margin-top: 30px;
+    transform: none;
+    transition: none;
+}
+
+.botonDeAccion{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botonDeAccion button{
+    width: 45%;
+}
+.botonFinalizar{
+    grid-area: finalizar;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.botonSeguir{
+    grid-area: seguir;
+    font-weight: 300;
+    font-size: 13px;
 }

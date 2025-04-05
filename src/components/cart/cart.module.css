@@ -1,0 +1,158 @@
+.cartStyle{
+    width: 100%;
+    font-family: 'Montserrat' ,sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 76.45px);
+    margin-top: 50px;
+}
+.cartStyle h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #c6c5c5;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.cartStyle ul{
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cartStyle ul li{
+    font-size: 15px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+    border: 0.5px solid rgb(74, 80, 63);
+    border-radius: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+    height: 55px;
+    align-items: center;
+}
+
+.cartStyle button{
+    font-size: 15px;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cartTotal {
+    width: 78%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    margin: 40px auto;
+    border: 0.5px solid rgb(74, 80, 63);
+    border-radius: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
+    height: 55px;
+    align-items: center;
+    background-color: rgba(233, 233, 233, 0.509);
+    text-transform: uppercase;
+}
+
+.closeCartButton{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+}
+.closeCartButton button{
+    font-size: 20px;
+    width: 40%;
+    height: 55px;
+    background-color: rgb(74, 80, 63);
+    color: #f5f5f5;
+}
+
+.orderForm{
+    width: 100%;
+    font-family: 'Montserrat' ,sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.orderForm h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #c6c5c5;
+}
+
+.orderForm div {
+    height: 55px;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.orderForm div label{
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: justify;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.orderForm div input{
+    width: 200px;
+    display: block;
+    width: 100%;
+    
+}
+
+.finishOrderButton{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.finishOrderButton button{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    width: 40%;
+    height: 45px;
+    color: #656d4a;
+}
+
+.finishOrderButton button:hover{
+    color: #f5f5f5;
+}
+
+.emptyCartStyle{
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: firebrick;
+    height: calc(100vh - 96.45px);
+    margin-top: 100px;
+}
+
+.volverAInicio{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 20%;
+    height: 45px;
+    color: #656d4a;
+    margin: 30px auto;
+}

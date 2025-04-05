@@ -1,0 +1,11 @@
+.itemCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: contador;
+}
+
+.itemCount p{
+    margin: 10px;
+    font-size: 12px;
+}

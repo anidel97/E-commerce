@@ -9,45 +9,50 @@
 }
 
 .tarjetas h2{
-    font-family: "Mulish", sans-serif;
-    font-size: 20px;
-    color: #656d4a;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #51514e;
     width: 80%;
     margin: 0px auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 30px;
 }
 
 .tarjetas img{
-    width: 80%;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 10px;
+    width: 100%;
+    height: 190px;
+    object-fit:cover;
+    border-radius: 0px 30px 0px 0px;
 }
 
 .tarjetas p{
-    font-family: "Mulish", sans-serif;
-    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
     color: #aaadb3;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 10px 0px 20px 0px;
+    margin: 15px 0px 20px 0px;
     align-items: end;
     flex-wrap: wrap;
 }
 
 .tarjetas button{
     height: 50px;
-    background-color: #656d4a;
-    color: #f5f5f5;
-    font-family: "Mulish", sans-serif;
-    font-size: 15px;
+    background-color: rgba(233, 233, 233, 0.509);
+    color: #303030;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
     border: none;
     border-radius: 10px;
-
     cursor: pointer;
     transition: 0.5s;
     align-items: flex-end;
+}
+
+.tarjetas button:hover{
+    background-color:rgba(101, 109, 74, 0.46);
 }

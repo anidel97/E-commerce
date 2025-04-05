@@ -14,6 +14,7 @@ import CartWidget from '../cartWidget/CartWidget';
 import { NavLink, Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 
+
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -40,10 +41,11 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" style={{ margin: 0, backgroundColor: '#f5f5f5'}}>
+        <AppBar position="sticky" style={{ margin: 0, backgroundColor: '#f5f5f5'}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
+                        className={styles["tituloNavBar"]}
                         variant="h4"
                         noWrap
                         component={NavLink}
@@ -68,10 +70,11 @@ function ResponsiveAppBar() {
                             onClick={handleOpenNavMenu}
                             color="#656d4a"
                         >
-                            <MenuIcon />
+                        <MenuIcon />
                         </IconButton>
                     </Box>
                     <Typography
+                        className={styles["tituloNavBar"]}
                         variant="h5"
                         noWrap
                         component={NavLink}
@@ -85,6 +88,8 @@ function ResponsiveAppBar() {
                             letterSpacing: '.3rem',
                             color: '#656d4a',
                             textDecoration: 'none',
+                            transform: 'scale(1.1)',
+                            transition: '1s',
                         }}
                     >
                         AnDeStudio.
@@ -102,7 +107,8 @@ function ResponsiveAppBar() {
                                 border: 'none',
                                 boxShadow: 'none', 
                                 '&:hover': {
-                                    backgroundColor: '#656d4a',  
+                                    backgroundColor: '#656d4a',
+                                    color: '#f5f5f5',  
                                 }}}
                         >
                             Productos
@@ -121,7 +127,7 @@ function ResponsiveAppBar() {
                             }}>
                             <MenuItem 
                                 component={Link} 
-                                to='/category/electronics' 
+                                to='/category/decoracion' 
                                 onClick={handleCloseDropdownMenu}
                                 sx={{
                                     margin: 1,
@@ -132,15 +138,15 @@ function ResponsiveAppBar() {
                                     fontFamily: 'Mulish',
                                     fontWeight: 300,
                                     color: '#656d4a',
-                                    textDecoration: 'none', color: '#656d4a',
+                                    textDecoration: 'none',
                                     borderColor: 'none'
                                 }}
                             >
-                                electronics - Decoración
+                                Decoración
                             </MenuItem>
                             <MenuItem 
                                 component={Link} 
-                                to='/category/jewelery' 
+                                to='/category/muebles' 
                                 onClick={handleCloseDropdownMenu}
                                 sx={{
                                     margin: 1,
@@ -151,11 +157,11 @@ function ResponsiveAppBar() {
                                     fontFamily: 'Mulish',
                                     fontWeight: 300,
                                     color: '#656d4a',
-                                    textDecoration: 'none' , color: '#656d4a',
+                                    textDecoration: 'none',
                                     borderColor: 'none'
                                 }}
                             >
-                                Joyas - Muebles
+                                Muebles
                             </MenuItem>
                         </Menu>
                     </Box>
@@ -170,6 +176,9 @@ function ResponsiveAppBar() {
                                     justifyContent: 'center',
                                     alignItems: 'center',
                                     height: '50px',
+                                    '&:hover': {
+                                        backgroundColor: '#656d4a', // Sin cambios en hover
+                                    },
                                 }}
                             >
                             <CartWidget/>
