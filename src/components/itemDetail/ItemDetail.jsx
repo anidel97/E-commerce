@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import style from './itemDetail.module.css';
+import style from './ItemDetail.module.css';
 import { useContext, useState } from 'react';
 import { ShopContext } from '../../context/ShopContext';
 import ItemCount from '../itemCount/ItemCount';
