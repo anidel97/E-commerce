@@ -1,4 +1,4 @@
-import style from './CartWidget.module.css';
+import style from './cartWidget.module.css';
 import Badge from '@mui/material/Badge';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import { Link, useLocation } from 'react-router-dom';
