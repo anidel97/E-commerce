@@ -12,7 +12,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import CartWidget from '../cartWidget/CartWidget';
 import { NavLink, Link } from 'react-router-dom';
-import styles from './NavBar.module.css';
+import styles from './navBar.module.css';
 
 
 function ResponsiveAppBar() {
