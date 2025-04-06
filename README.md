@@ -76,5 +76,5 @@ Los estilos están organizados en CSS Modules serparados por componentes para su
 
 ### Deploy
 El proyecto está desplegado en Netlify y Vercel, a través de los siguientes enlaces:
-Vercel: `https://e-commerce-three-olive-18.vercel.app/`
-Netlify: `andestudioe-commerce.netlify.app`
+Vercel: `(https://e-commerce-three-olive-18.vercel.app/)`
+Netlify: `(andestudioe-commerce.netlify.app)`
