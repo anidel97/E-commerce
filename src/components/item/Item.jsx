@@ -1,6 +1,6 @@
 /* Card del producto, el estilo de la card*/
 import { useNavigate } from 'react-router-dom';
-import style from './item.module.css';
+import style from './Item.module.css';
 
 
 const Item = ({ producto }) => {
