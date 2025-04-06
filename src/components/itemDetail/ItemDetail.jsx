@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import style from './ItemDetail.module.css';
 import { useContext, useState } from 'react';
 import { ShopContext } from '../../context/ShopContext';
 import ItemCount from '../itemCount/ItemCount';
+import style from './ItemDetail.module.css';
 
 const ItemDetail = ({ producto }) => {
     const navigate = useNavigate();
