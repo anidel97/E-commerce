@@ -75,14 +75,8 @@ Completa el formulario de compra y envía la orden.
 Los estilos están organizados en CSS Modules serparados por componentes para su facil utilización y corrección.
 
 ### Deploy
-<<<<<<< HEAD
 El proyecto está desplegado en Netlify y Vercel, a través de los siguientes enlaces: 
 
 Vercel: [AnDeStudio. Vercel](https://e-commerce-three-olive-18.vercel.app/) 
 
 Netlify: [AnDeStudio. Netlify](https://andestudioe-commerce.netlify.app/)
-=======
-El proyecto está desplegado en Netlify y Vercel, a través de los siguientes enlaces:
-Vercel: `(https://e-commerce-three-olive-18.vercel.app/)`
-Netlify: `(andestudioe-commerce.netlify.app)`
->>>>>>> 163db8d2f7d2d6adf8b36b9449eca562d2c55a8b
