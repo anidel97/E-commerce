@@ -73,3 +73,10 @@ Completa el formulario de compra y envía la orden.
 
 ### Estilos Personalizados
 Los estilos están organizados en CSS Modules serparados por componentes para su facil utilización y corrección.
+
+### Deploy
+El proyecto está desplegado en Netlify y Vercel, a través de los siguientes enlaces: 
+
+Vercel: [AnDeStudio. Vercel](https://e-commerce-three-olive-18.vercel.app/) 
+
+Netlify: [AnDeStudio. Netlify](https://andestudioe-commerce.netlify.app/)
