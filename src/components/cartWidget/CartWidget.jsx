@@ -1,10 +1,9 @@
-import style from './cartWidget.module.css';
 import Badge from '@mui/material/Badge';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import { Link, useLocation } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
 import { ShopContext } from '../../context/ShopContext';
-
+import style from './cartWidget.module.css';
 const CartWidget = () => {
     const { cart, handleCount } = useContext(ShopContext); // Obtener el carrito y handleCount del contexto
     const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Estado para manejar la visibilidad del dropdown

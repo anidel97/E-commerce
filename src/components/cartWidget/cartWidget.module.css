@@ -16,7 +16,7 @@
 }
 
 .dropdown {
-    position: absolute; 
+    position: absolute;
     top: 100%; /* Hace que el dropdown aparezca debajo del botón */
     right: 0;
     background-color: white;
